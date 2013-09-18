@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+    <meta charset="utf-8" />
+    <title>Jack He</title>
+    <link rel="stylesheet" type="test/css" href="main.css"> 
+
+<!--[if IE]>
+    <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script><![endif]-->
+<!--[if lte IE 7]>
+    <script src="js/IE8.js" type="text/javascript"></script><![endif]-->
+ 
+<!--[if lt IE 7]>
+    <link rel="stylesheet" type="text/css" media="all" href="css/ie6.css"/><![endif]-->
+
+</head>
+
+<body>
+
+<a name="top"></a>
+
+<header id="banner" class="body">
+    <h1 style="text-align:center">Jack He's Personal Webpage</h1>
+
+    <nav style="text-align:center"><ul class="navlist">
+        <li class="navlist"><a href="#">home</a></li>
+        <li class="navlist"><a href="#special">special topic</a></li>
+        <li class="navlist"><a href="#introduction">whoami</a></li>
+        <li class="navlist"><a href="#work">work</a></li>
+        <li class="navlist"><a href="#projects">projects</a></li>  
+    </ul></nav>
+
+</header><!-- /#banner --> 
+
+<a name="special"></a>
+
+<aside id="special" class="body"><article>
+
+    <figure style="float:right">
+        <img src="html5css3.jpg" style="width:100px"/>
+    </figure>
+
+    <hgroup>
+        <h2><b>Jack's News Today</b></h2>
+        <h3><a href="#feature">Jack's learning on web development.</a></h3>
+    </hgroup>
+    
+    <p>Jack has just learnt about HTML/Javascript/CSS and developed his first webpage. </p>
+ 
+</article></aside><!-- /#featured -->
+
+<a name="introduction"></a>
+<section id="introduction" class="body">
+ 
+    <figure style="float:right">
+        <a href="jack.jpg"><img src="jack.jpg" style="width:120px"/></a>
+    </figure>
+
+    <hgroup>
+        <h2><b>Who am I?</b></h2>
+    <hgroup>
+
+    <p>I am a Junior EECS & Physics student at UC Berkeley.</p>
+    <P>I went to Singapore for high school at <a href="http://www.vjc.moe.edu.sg">Victoria Junior College</a> because of a scholarship I got from Singapore Ministry of Education after graduating from my middle school in Jinzhou, China.</p>
+    <p>I am a huge fun of robotics and vehicle design. At Berkeley, I spend a large amount of my free time at <a href="http://calsol.berkeley.edu">CalSol- UC Berkeley Solar Vehicle Team</a>, in which we design, build, test, and race 100% solar powered vehicles. I was lucky that I got to participate in the American Solar Challenge 2012 from Rochester, NY to St. Paul, MN, a 1650-mile endurance race. This race boosted my interest on CalSol and I became the Electrical Lead for the team at Fall 2012. I was then in charge of the Electrical Team of Calsol and was involved in several major decesion making process for CalSol's next generation solar car.</p>
+ 
+</section><!-- /#content -->
+ 
+<a name="projects"></a>
+<section id="projects" class="body">
+    <div class="project">
+        <h3><b>Power Hub</b> | <I>An ARM based power-efficient low voltage power management device on the solar car</I></h3>
+        <ul>
+            <li>Designed a device to manage 12V power on solar car based on LPC11C14/24 – a Cortex-M0 ARM processor from NXP.</li>
+            <li>Implemented LTC4151 to monitor each line’s current and voltage individually and report to the processor through I2C bus.</li>
+            <li>Implemented LTC1153 electronic circuit breaker for each line and let them report status back to the processor.</li>
+            <li>Programmed the processor to react to CAN messages and report status and alerts through CAN.</li>
+            <li>Schematics avaliable upon request.</li>
+        </ul>
+    </div>
+ 
+    <div class="project">
+        <h3><b>SmallWorld</b> | <I>A Hadoop Implementation of Parallel DFS | Project for CS 61C Machine Structure</I></h3>
+        <ul>
+            <li>Implemented a parallel Deep First Search to calculate the distribution of relationship distance from a relationship graph</li>
+            <li>Tested on Amazon EC2 and ElasticMapReduce with test cases of 1 million Actors from the Hollywood co-star database and 5.7 million Wikipedia contributors from the Wikipedia links circa 2011.</li>
+            <li>Finished the 1 million nodes test in 30 minutes and 5.7 million nodes test in 50 minutes with 48 reducers on 12 machines</li>
+            <li>Code available at: <a href="http://goo.gl/CPHg5">http://goo.gl/CPHg5</a></li>
+            <li>Inspired by Frigyes Karinthy’s Six Degrees of Separation</li>
+
+        </ul>
+    </div>
+
+    <div class="project">
+        <h3><b>Transistor AM Radio (Using BJTs & MOSFETs)</b> | <I>Final Project for EE 105 Microelectronic Devices & Circuits</I></h3>
+        <ul>
+            <li>Designed an amplifier circuit that has high input impedance, low output impedance and can drive an 8 Ω speaker</li>
+            <li>Designed a tunable demodulator circuit that can receive signal from local radio stations with an antenna</li>
+            <li>Design summary available at: <a href="http://db.tt/crfYyz7p">http://db.tt/crfYyz7p</a></li>
+            <li>Detailed documentation: <a href="http://db.tt/rdrxutwb">http://db.tt/rdrxutwb</a></li>
+        </ul>
+    </div>
+
+    <div class="project">
+        <h3><b>Line of Action with AI & GUI</b> | <I>Final Project for CS 61B Data Structure</I></h3>
+        <ul>
+            <li>Developed a program for the game “Line of Action” in JAVA.</li>
+            <li>Implemented an AI player using Game Tree search and Alpha Beta Pruning.</li>
+            <li>Designed a simple GUI using JFrame.</li>
+            <li>Code available at: <a href="https://bitbucket.org/hsysuper/line-of-action/">https://bitbucket.org/hsysuper/line-of-action/</a></li>
+        </ul>
+    </div>
+
+    <div class="project">
+        <h3><b>Scheme Interpreter in Python</b> | <I>Final Project for CS 61A Structure and Interpretation of Computer Program</I></h3>
+        <ul>
+            <li>Developed an interpreter for a subset of the Scheme Language, a dialect of Lisp, using Python.</li>
+            <li>Implemented Turtle graph within the interpreter, backed by Python’s turtle module.</li>
+            <li>Code available at: <a href="https://github.com/hsysuper/python-scheme">https://github.com/hsysuper/python-scheme</a></li>
+        </ul>
+    </div>
+</section><!-- /#extras -->
+
+<footer id="contentinfo" class="body" style="text-align:center;line-height: 100%">
+    <address id="about" class="vcard body">
+        <span class="primary">
+            <strong><a href="#" class="fn url">Jack He</a></strong>
+ 
+            <span class="role">Jack He</span>
+        </span><!-- /.primary -->
+        <span class="bio">Jack He's work must be remembered.</span>
+ 
+    </address><!-- /#about -->
+    <p>Nobody should use the content this page else where without approval from Jack Siyuan He</p>
+    <p>Copyright 2013 <a href="http://jackhe.net">Jack He</a>.</p>
+</footer><!-- /#contentinfo -->
+
+</body>
+
+</html>
